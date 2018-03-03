@@ -1,0 +1,120 @@
+/* HTML TAGS */
+
+html, body {
+	height: 100%;
+	
+	overflow: hidden;
+	background: linear-gradient(to bottom right, rgba(0, 0, 0, .8), rgba(30, 30, 30, .8), rgba(0, 0, 0, .8));
+}
+
+html {
+	position: fixed;
+}
+
+body {
+	max-width: 733px;
+	
+}
+
+nav {
+	display: inline !important;
+}
+
+h1, h2, h3, small {
+	color: ghostwhite !important;
+	font-family: "Krona one" !important;
+	text-shadow: 2px 3px 3px rgba(0, 0, 0, .7);
+}
+
+h4 {
+	color: rgb(0, 0, 0);
+	font-family: Oswald;
+}
+
+div, nav {
+	max-width: 733px;
+}
+
+td, tr {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+
+/* BOOTSTRAP OVERRIDES */
+
+.container {
+	padding: 0 !important;
+}
+
+.row {
+	justify-content: center;
+}
+
+.col-xs-6 {
+	padding: 10px;
+}
+
+.btn {
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+}
+
+/* CUSTOM CLASSES */
+
+.horizontal-layout {
+	width: 100%;
+	height: 100%;
+	transform: rotate(-90deg);
+	transform-origin: right top;
+}
+
+.horizontal-layout > div {
+	width: 100%;
+	height: 100%;
+	transform: rotate(90deg);
+	transform-origin: right top;
+}
+
+.landing-page {
+	background-image: url("../images/homescreen.jpg");
+	background-size: auto 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding-top: 1em;
+}
+
+.order-bg {
+	background-image: url("../images/appbg.jpg");
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	padding-top: 1em;
+}
+
+.form-container {
+
+	background: rgba(240, 240, 240, .9);
+	border-radius: 8px;
+	margin: 0 auto !important;
+	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .8);
+	border: 1px solid black;
+}
+
+/* DIRECT ELEMENT TAGS */
+
+#btn-left, #btn-right, #total {
+	display: none;
+}
+
+#total {
+	margin-top: 4%;	
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+	div {
+		margin-bottom: 46px;
+	}
+}

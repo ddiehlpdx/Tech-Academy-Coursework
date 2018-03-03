@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- HOUSEKEEPING -->
+		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Krona+One%7COswald">
+		<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+		
+		<title>Order Online!</title>
+				<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+	</head>
+	
+	<body>
+	
+	<!-- NAVIGATION -->
+	
+	
+	<!-- HOME SCREEN -->
+		<nav class="navbar fixed-bottom navbar-light text-center" id="nav">
+			<button type="button" id ="btn-left" onclick="scrLeft();" class="btn btn-primary float-left btn-lg p-2"><i class="fas fa-chevron-circle-left display-4"></i></button>
+			<button id="total" class="btn btn-secondary btn-lg p-2 mx-5">$</button>
+			<button type="button" id ="btn-right" onclick="scrRight();" class="btn btn-primary float-right btn-lg p-2"><i class="fas fa-chevron-circle-right display-4"></i></button>
+		</nav>
+		<div class="container horizontal-layout text-center">
+			<div class="landing-page" id="1">
+				<h1 class="mb-5">Pizza Planet</h1>
+				<br><br><br><br>
+				<button type="button" onclick="begin();" class="btn btn-primary btn-lg mt-5">Start Your Order!</button>
+			</div>
+			
+	<!-- FIRST ORDERING PAGE -->		
+			<div class="order-bg col-xs-12" style="background-position: left;" id="2">
+				<h3>Choose a size and crust...</h3>
+				<small>Let's build your perfect pizza.</small>
+				<br><hr><br>
+				<div class="form-container">
+					<p><strong>Size:</strong></p>
+					<form id="frm1">
+						<input type="radio" id="Small" name="size" value="6" checked="checked">
+						<label for="Small">Small ($6)</label><br>
+						<input type="radio" id="Medium" name="size" value="10">
+						<label for="Medium">Medium ($10)</label><br>
+						<input type="radio" id="Large" name="size" value="14">
+						<label for="Large">Large ($14)</label><br>
+						<input type="radio" id="Extra Large" name="size" value="16">
+						<label for="Extr Large">Extra Large ($16)</label>
+						<br><br>
+						<p><strong>Crust:</strong></p>
+						<input type="radio" id="Plain Crust" name="crust" value="0" checked="checked">
+						<label for="Plain">Plain</label><br>
+						<input type="radio" id="Garlic Butter Crust" name="crust" value="0">
+						<label for="Garlic Butter">Garlic Butter</label><br>
+						<input type="radio" id="Spicy Crust" name="crust" value="0">
+						<label for="Spicy">Spicy</label><br>
+						<input type="radio" id="House Special Crust" name="crust" value="0">
+						<label for="House Special">House Special</label><br>
+						<input type="radio" id="Cheese-Stuffed Crust" name="crust" value="3">
+						<label for="Cheese-Stuffed">Cheese-Stuffed (+$3)</label>
+					</form>
+				</div>
+			</div>
+			
+	<!-- SECOND ORDERING PAGE -->	
+			<div class="order-bg" style="background-position: center;" id="3">
+				<h3>Sauce and Cheese...</h3>
+				<small>You're almost there!</small>
+				<br><hr><br>
+				<div class="form-container">
+					<p><strong>Sauce:</strong></p>
+					<form id="frm2">
+						<input type="radio" id="Marinara Sauce" name="sauce" value="0" checked="checked">
+						<label for="Marinara">Marinara</label><br>
+						<input type="radio" id="White Sauce" name="sauce" value="0">
+						<label for="White">White</label><br>
+						<input type="radio" id="BBQ Sauce" name="sauce" value="0">
+						<label for="BBQ">BBQ</label><br>
+						<input type="radio" id="No Sauce" name="sauce" value="0">
+						<label for="No Sauce">No Sauce</label>
+						<br><br>
+						<p><strong>Cheese:</strong></p>
+						<input type="radio" id="Regular Cheese" name="cheese" value="0" checked="checked">
+						<label for="Regular">Regular</label><br>
+						<input type="radio" id="Extra Cheese" name="cheese" value="3">
+						<label for="Extra">Extra (+$3)</label><br>
+						<input type="radio" id="No Cheese" name="cheese" value="0">
+						<label for="None">None</label>
+					</form>
+				</div>
+			</div>
+			
+	<!-- THIRD ORDERING PAGE | TWO COLUMNS -->	
+			<div class="order-bg text-center" style="background-position: right;" id="4">
+				<h3>Meats and Veggies...</h3>
+				<small>I bet you can taste it already. We sure can.</small>
+				<br><hr><br>
+				<div class="form-container row pt-3"><p>All toppings are an additional $1</p></div>
+				<div class="form-container row">
+					<div class="col-xs-6">
+						<p><strong>Meats:</strong></p>
+						<form id="frm3">
+							<input type="checkbox" id="Pepperoni" name="meats" value="1">
+							<label for="Pepperoni">Pepperoni</label><br>
+							<input type="checkbox" id="Sausage" name="meats" value="1">
+							<label for="Sausage">Sausage</label><br>
+							<input type="checkbox" id="Canadian Bacon" name="meats" value="1">
+							<label for="Canadian Bacon">Canadian Bacon</label><br>
+							<input type="checkbox" id="Beef" name="meats" value="1">
+							<label for="Beef">Beef</label><br>
+							<input type="checkbox" id="Anchovy" name="meats" value="1">
+							<label for="Anchovy">Anchovy</label><br>
+							<input type="checkbox" id="Chicken" name="meats" value="1">
+							<label for="Chicken">Chicken</label>
+							<br><br>
+						</form>
+					</div>
+					<div class="col-xs-6" style="border-left: 1px solid black;">
+						<p><strong>Veggies:</strong></p>
+						<form id="frm4">
+							<input type="checkbox" id="Tomato" name="veggies" value="1">
+							<label for="Tomato">Tomato</label><br>
+							<input type="checkbox" id="Onion" name="veggies" value="1">
+							<label for="Onion">Onion</label><br>
+							<input type="checkbox" id="Olive" name="veggies" value="1">
+							<label for="Olive">Olive</label><br>
+							<input type="checkbox" id="Green Pepper" name="veggies" value="1">
+							<label for="Green Pepper">Green Pepper</label><br>
+							<input type="checkbox" id="Mushroom" name="veggies" value="1">
+							<label for="Mushroom">Mushroom</label><br>
+							<input type="checkbox" id="Pineapple" name="veggies" value="1">
+							<label for="Pineapple">Pineapple</label><br>
+							<input type="checkbox" id="Spinach" name="veggies" value="1">
+							<label for="SPinach">Spinach</label><br>
+							<input type="checkbox" id="Jalapeno" name="veggies" value="1">
+							<label for="Jalapeno">Jalapeno</label>
+						</form>
+					</div>
+				</div>
+			</div>
+			
+			
+		
+		
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="./js/main.js"></script>
+		<div class="modal fade" id="modal">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Your Total...</h5>
+					</div>
+					<div class="modal-body" id="modal-body">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		</div>
+	</body>
+</html>
