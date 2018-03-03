@@ -40,7 +40,6 @@ td, tr {
 	padding-right: 10px;
 }
 
-
 /* BOOTSTRAP OVERRIDES */
 
 .container {
@@ -109,8 +108,6 @@ td, tr {
 	margin-top: 4%;	
 }
 
-
-
 /* MEDIA QUERIES */
 
 @media (min-width: 768px) {
@@ -118,5 +115,3 @@ td, tr {
 		margin-bottom: 46px;
 	}
 }
-
-/* COMMENT */

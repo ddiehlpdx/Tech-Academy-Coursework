@@ -62,7 +62,6 @@ function calculateTotal() {
 	$(currentForm+" input[type=radio]:checked, input[type=checkbox]:checked").each(function() {
 		itemized.push([$(this).attr('id'), $(this).val()]);
 		runningTotal += parseInt($(this).val());
-		console.log(itemized);
 	});
 }
 
@@ -73,7 +72,6 @@ function negate() {
 	});
 	itemized.pop();
 	itemized.pop();
-	console.table(itemized);
 }
 
 function totalOut(arr) {
