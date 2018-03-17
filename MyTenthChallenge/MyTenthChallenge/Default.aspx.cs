@@ -123,14 +123,3 @@ namespace MyTenthChallenge {
 		}
 	}
 }
-
-//StartsWith(), EndsWith(), Contains()
-//IndexOf()
-//Insert(index, string), Remove(index, int length)
-//Substring(index, int length)
-//Trim(), TrimStart(), TrimEnd()
-//PadLeft(total width of pad, 'char'), PadRight(width of pad, 'char')
-//ToUpper(), ToLower()
-//Replace(string, string)
-//Split()
-//StringBuilder class/obj (name = new StringBuilder();) name.Append();
