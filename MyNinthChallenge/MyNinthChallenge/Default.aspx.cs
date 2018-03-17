@@ -34,7 +34,7 @@ namespace MyNinthChallenge {
 			reel1.ImageUrl = setImage();
 			reel2.ImageUrl = setImage();
 			reel3.ImageUrl = setImage();
-			if(modifier > 1 && winner == true) {
+			if(modifier > 1) {
 				if(sevens == 3) {
 					playerMoney += (playerBet * 100);
 					resultLabel.Text = "Great Job! You win 100x your bet!";
