@@ -35,20 +35,18 @@ namespace MyNinthChallenge {
 			reel2.ImageUrl = setImage();
 			reel3.ImageUrl = setImage();
 			if(modifier > 1) {
-				if(sevens == 3) {
-					playerMoney += (playerBet * 100);
-					resultLabel.Text = "Great Job! You win 100x your bet!";
-					modifier = 1;
-					sevens = 0;
-					borat.ImageUrl = "./images/verynice.jpg";
-				}
-				else {
 					playerMoney += (playerBet * modifier);
 					resultLabel.Text = String.Format("Great Job! You win {0} times your bet!", modifier);
 					modifier = 1;
 					sevens = 0;
 					borat.ImageUrl = "./images/greatsuccess.gif";
-				}
+			}
+			else if (sevens == 3) {
+				playerMoney += (playerBet * 100);
+				resultLabel.Text = "Great Job! You win 100x your bet!";
+				modifier = 1;
+				sevens = 0;
+				borat.ImageUrl = "./images/verynice.jpg";
 			}
 			else {
 				playerMoney -= playerBet;
