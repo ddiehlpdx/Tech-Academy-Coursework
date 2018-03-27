@@ -19,7 +19,6 @@ namespace MyThirteenthChallenge.Domain {
 				}
 			}
 			else if (playerTwo.CurrentDraw.Value > playerOne.CurrentDraw.Value) {
-				playerTwo.Hand.Reverse();
 				foreach (var card in BattleGroup) {
 					playerTwo.Hand.Enqueue(card);
 				}
@@ -40,7 +39,6 @@ namespace MyThirteenthChallenge.Domain {
 				}
 			}
 			else if (playerTwo.CurrentDraw.Value > playerOne.CurrentDraw.Value) {
-				playerTwo.Hand.Reverse();
 				foreach (var card in BattleGroup) {
 					playerTwo.Hand.Enqueue(card);
 				}
