@@ -1,0 +1,4 @@
+C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\C-Sharp\CS-DB-Entity\CS-DB-Entity.DTO\bin\Debug\CS-DB-Entity.DTO.dll
+C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\C-Sharp\CS-DB-Entity\CS-DB-Entity.DTO\bin\Debug\CS-DB-Entity.DTO.pdb
+C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\C-Sharp\CS-DB-Entity\CS-DB-Entity.DTO\obj\Debug\CS-DB-Entity.DTO.dll
+C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\C-Sharp\CS-DB-Entity\CS-DB-Entity.DTO\obj\Debug\CS-DB-Entity.DTO.pdb

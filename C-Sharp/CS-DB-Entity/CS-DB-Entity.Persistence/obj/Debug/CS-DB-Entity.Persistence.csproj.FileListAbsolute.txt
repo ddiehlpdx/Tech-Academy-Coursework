@@ -1,0 +1,12 @@
+C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\C-Sharp\CS-DB-Entity\CS-DB-Entity.Persistence\bin\Debug\CS-DB-Entity.Persistence.dll
+C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\C-Sharp\CS-DB-Entity\CS-DB-Entity.Persistence\bin\Debug\CS-DB-Entity.Persistence.pdb
+C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\C-Sharp\CS-DB-Entity\CS-DB-Entity.Persistence\obj\Debug\CS-DB-Entity.Persistence.csprojResolveAssemblyReference.cache
+C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\C-Sharp\CS-DB-Entity\CS-DB-Entity.Persistence\obj\Debug\CS-DB-Entity.Persistence.dll
+C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\C-Sharp\CS-DB-Entity\CS-DB-Entity.Persistence\obj\Debug\CS-DB-Entity.Persistence.pdb
+C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\C-Sharp\CS-DB-Entity\CS-DB-Entity.Persistence\bin\Debug\CS-DB-Entity.Persistence.dll.config
+C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\C-Sharp\CS-DB-Entity\CS-DB-Entity.Persistence\bin\Debug\EntityFramework.dll
+C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\C-Sharp\CS-DB-Entity\CS-DB-Entity.Persistence\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\C-Sharp\CS-DB-Entity\CS-DB-Entity.Persistence\bin\Debug\EntityFramework.xml
+C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\C-Sharp\CS-DB-Entity\CS-DB-Entity.Persistence\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\C-Sharp\CS-DB-Entity\CS-DB-Entity.Persistence\bin\Debug\CS-DB-Entity.DTO.dll
+C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\C-Sharp\CS-DB-Entity\CS-DB-Entity.Persistence\bin\Debug\CS-DB-Entity.DTO.pdb
