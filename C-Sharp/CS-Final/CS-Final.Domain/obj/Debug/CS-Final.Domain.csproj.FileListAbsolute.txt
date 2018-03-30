@@ -1,0 +1,5 @@
+C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\C-Sharp\CS-Final\CS-Final.Domain\bin\Debug\CS-Final.Domain.dll
+C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\C-Sharp\CS-Final\CS-Final.Domain\bin\Debug\CS-Final.Domain.pdb
+C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\C-Sharp\CS-Final\CS-Final.Domain\obj\Debug\CS-Final.Domain.csprojResolveAssemblyReference.cache
+C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\C-Sharp\CS-Final\CS-Final.Domain\obj\Debug\CS-Final.Domain.dll
+C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\C-Sharp\CS-Final\CS-Final.Domain\obj\Debug\CS-Final.Domain.pdb
