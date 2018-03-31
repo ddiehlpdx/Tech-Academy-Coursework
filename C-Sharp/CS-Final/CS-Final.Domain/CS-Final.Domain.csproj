@@ -40,9 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exceptions\InvalidSubmission.cs" />
     <Compile Include="Order.cs" />
-    <Compile Include="Pizza.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CS-Final.Persistence\CS-Final.Persistence.csproj">
+      <Project>{0b962df0-6d4d-4b1f-95a2-b0ffa17939a9}</Project>
+      <Name>CS-Final.Persistence</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

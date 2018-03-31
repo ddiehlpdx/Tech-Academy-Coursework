@@ -69,14 +69,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>OrdersEntities.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Pizza.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CS-Final.Domain\CS-Final.Domain.csproj">
-      <Project>{8a4ef837-2290-43c9-8c79-76d42f0318b3}</Project>
-      <Name>CS-Final.Domain</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <EntityDeploy Include="OrdersEntities.edmx">
