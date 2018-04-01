@@ -8,6 +8,8 @@ using System.Web.UI.WebControls;
 
 namespace CS_Final {
 	public partial class Default : System.Web.UI.Page {
+
+		//PROPERTIES USED TO TRACK PRICING BASED ON SELECTIONS
 		public string exception = "";
 		public static double sizeTotal = 0;
 		public static double crustTotal = 0;
@@ -18,10 +20,10 @@ namespace CS_Final {
 		protected void Page_Load(object sender, EventArgs e) {
 			if (!Page.IsPostBack) {
 				totalLabel.Text = "$0.00";
-				exceptionLabel.Text = size.SelectedValue;
 			}
 		}
 
+		//FUNCTIONS TO DETECT USER'S SELECTIONS AND UPDATE PRICING BY CATEGORY
 		protected void size_SelectedIndexChanged(object sender, EventArgs e) {
 			switch(size.SelectedValue) {
 				case "small":
@@ -98,6 +100,8 @@ namespace CS_Final {
 			totalLabel.Text = Domain.Order.GetTotal(sizeTotal, crustTotal, Domain.Order.TrackToppings(toppings));
 		}
 
+		//CREATE A NEW DATA TRANSFER OBJECT ON SUBMIT,
+		//SEND TO DOMAIN FOR PROCESSING
 		protected void submitButton_Click(object sender, EventArgs e) {
 			var order = new DTO.Order();
 
@@ -117,6 +121,7 @@ namespace CS_Final {
 				double total = Convert.ToDouble(sizeTotal + crustTotal + toppingsTotal);
 
 				Domain.Order.ProcessOrder(order);
+				Server.Transfer("Success.aspx");
 			}
 			catch (Domain.Exceptions.InvalidSubmission) {
 				exception = "You must choose a size option and a crust option.";

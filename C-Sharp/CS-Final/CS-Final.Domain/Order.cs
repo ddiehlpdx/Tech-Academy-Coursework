@@ -17,10 +17,11 @@ namespace CS_Final.Domain {
 		public string Zip { get; set; }
 		public string Phone { get; set; }
 		public string Payment { get; set; }
-
 		public static int parsedZip = 0;
 		public static long parsedPhone = 0;
 
+		//FUNCTIONS TO UPDATE TOTAL, 
+		//CALLED ON EACH USER SELECTION
 		public static string GetTotal(double sizeTotal, double crustTotal, double toppingsTotal) {
 			return String.Format("{0:C}", sizeTotal + crustTotal + toppingsTotal);
 		}
@@ -50,6 +51,8 @@ namespace CS_Final.Domain {
 			return toppingsTotal;
 		}
 
+		//VERIFY ORDER OBJECT MEETS VALIDATION REQUIREMENTS,
+		//SEND TO PERSISTENCE LAYER TO BE STORED IN DB
 		public static void ProcessOrder(DTO.Order order) {
 			if (order.Size == "choose") {
 				throw new InvalidSubmission();
@@ -73,20 +76,8 @@ namespace CS_Final.Domain {
 				string error = "You must enter a valid phone number with digits only.";
 				throw new FormatException(error);
 			}
-
-			DTO.Order validatedOrder = new DTO.Order();
-
-			validatedOrder.Id = Guid.NewGuid();
-			validatedOrder.Size = order.Size;
-			validatedOrder.Crust = order.Crust;
-			validatedOrder.Toppings = order.Toppings;
-			validatedOrder.Name = order.Name;
-			validatedOrder.Address = order.Address;
-			validatedOrder.Zip = parsedZip.ToString();
-			validatedOrder.Phone = String.Format("{0:(###)###-####}", order.Phone);
-			validatedOrder.Payment = order.Payment;
 			
-			Persistence.OrdersRepository.StoreOrder(validatedOrder);
+			Persistence.OrdersRepository.StoreOrder(order);
 		}
     }
 }

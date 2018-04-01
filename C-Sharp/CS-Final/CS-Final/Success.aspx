@@ -10,7 +10,7 @@
 <body class="bg-dark">
     <form id="form1" runat="server">
     <div>
-    <h1>Great success!</h1>
+    <h1 style="color: black">Great success!</h1>
     </div>
     </form>
 </body>
