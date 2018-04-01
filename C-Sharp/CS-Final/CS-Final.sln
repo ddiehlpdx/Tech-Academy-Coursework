@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS-Final.Domain", "CS-Final
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS-Final.Persistence", "CS-Final.Persistence\CS-Final.Persistence.csproj", "{0B962DF0-6D4D-4B1F-95A2-B0FFA17939A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS-Final.DTO", "CS-Final.DTO\CS-Final.DTO.csproj", "{3F33D7AA-0CDD-4253-ADD0-CEE1C2DA14C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{0B962DF0-6D4D-4B1F-95A2-B0FFA17939A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B962DF0-6D4D-4B1F-95A2-B0FFA17939A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B962DF0-6D4D-4B1F-95A2-B0FFA17939A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F33D7AA-0CDD-4253-ADD0-CEE1C2DA14C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F33D7AA-0CDD-4253-ADD0-CEE1C2DA14C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F33D7AA-0CDD-4253-ADD0-CEE1C2DA14C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F33D7AA-0CDD-4253-ADD0-CEE1C2DA14C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

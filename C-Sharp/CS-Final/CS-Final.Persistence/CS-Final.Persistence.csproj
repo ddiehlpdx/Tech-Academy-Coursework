@@ -31,11 +31,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -69,35 +69,40 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>OrdersEntities.edmx</DependentUpon>
     </Compile>
+    <Compile Include="OrdersRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.Config" />
     <EntityDeploy Include="OrdersEntities.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>OrdersEntities.Designer.cs</LastGenOutput>
     </EntityDeploy>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.Config" />
     <None Include="OrdersEntities.edmx.diagram">
       <DependentUpon>OrdersEntities.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CS-Final.DTO\CS-Final.DTO.csproj">
+      <Project>{3f33d7aa-0cdd-4253-add0-cee1c2da14c8}</Project>
+      <Name>CS-Final.DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="OrdersEntities.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>OrdersEntities.Context.cs</LastGenOutput>
       <DependentUpon>OrdersEntities.edmx</DependentUpon>
+      <LastGenOutput>OrdersEntities.Context.cs</LastGenOutput>
     </Content>
     <Content Include="OrdersEntities.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>OrdersEntities.edmx</DependentUpon>
       <LastGenOutput>OrdersEntities.cs</LastGenOutput>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

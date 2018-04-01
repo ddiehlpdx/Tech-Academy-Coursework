@@ -61,29 +61,29 @@
             <h5 class="mt-3">Deliver To:</h5>
             <div class="form-group">
                 <label for="name">Name:</label>
-                <asp:TextBox class="form-control" ID="name" runat="server" AutoPostBack="True"></asp:TextBox>
+                <asp:TextBox class="form-control" ID="name" runat="server"></asp:TextBox>
             </div>
             <div class="form-group">
                 <label for="name">Address:</label>
-                <asp:TextBox class="form-control" ID="address" runat="server" AutoPostBack="True"></asp:TextBox>
+                <asp:TextBox class="form-control" ID="address" runat="server"></asp:TextBox>
             </div>
             <div class="form-group">
                 <label for="name">Zip:</label>
-                <asp:TextBox class="form-control" ID="zip" runat="server" AutoPostBack="True"></asp:TextBox>
+                <asp:TextBox class="form-control" ID="zip" runat="server"></asp:TextBox>
             </div>
             <div class="form-group">
                 <label for="name">Phone:</label>
-                <asp:TextBox class="form-control" ID="phone" runat="server" AutoPostBack="True"></asp:TextBox>
+                <asp:TextBox class="form-control" ID="phone" runat="server"></asp:TextBox>
             </div>
             <h5 class="mt-3">Payment Method:</h5>
             <div class="form-check">
-                <asp:RadioButton ID="cashRadio" runat="server" GroupName="payment" AutoPostBack="True" />
+                <asp:RadioButton ID="cashRadio" runat="server" GroupName="payment" />
                 <label class="form-check-label" for="cashRadio">
                   Cash
                 </label>
             </div>
             <div class="form-check">
-                <asp:RadioButton ID="cardRadio" runat="server" GroupName="payment" AutoPostBack="True" />
+                <asp:RadioButton ID="cardRadio" runat="server" GroupName="payment" />
                 <label class="form-check-label" for="cardRadio">
                   Card
                 </label>

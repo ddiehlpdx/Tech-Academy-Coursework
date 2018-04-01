@@ -33,3 +33,11 @@ C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\C-Sharp\CS-Final\CS-Fina
 C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\C-Sharp\CS-Final\CS-Final\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\C-Sharp\CS-Final\CS-Final\obj\Debug\CS-Final.dll
 C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\C-Sharp\CS-Final\CS-Final\obj\Debug\CS-Final.pdb
+C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\C-Sharp\CS-Final\CS-Final\bin\CS-Final.Persistence.dll
+C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\C-Sharp\CS-Final\CS-Final\bin\EntityFramework.dll
+C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\C-Sharp\CS-Final\CS-Final\bin\CS-Final.Persistence.pdb
+C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\C-Sharp\CS-Final\CS-Final\bin\EntityFramework.xml
+C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\C-Sharp\CS-Final\CS-Final\bin\EntityFramework.SqlServer.dll
+C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\C-Sharp\CS-Final\CS-Final\bin\EntityFramework.SqlServer.xml
+C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\C-Sharp\CS-Final\CS-Final\bin\CS-Final.DTO.dll
+C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\C-Sharp\CS-Final\CS-Final\bin\CS-Final.DTO.pdb

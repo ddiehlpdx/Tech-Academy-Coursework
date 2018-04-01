@@ -19,7 +19,7 @@ namespace CS_Final.Domain {
 		public string Payment { get; set; }
 
 		public static int parsedZip = 0;
-		public static int parsedPhone = 0;
+		public static long parsedPhone = 0;
 
 		public static string GetTotal(double sizeTotal, double crustTotal, double toppingsTotal) {
 			return String.Format("{0:C}", sizeTotal + crustTotal + toppingsTotal);
@@ -50,7 +50,7 @@ namespace CS_Final.Domain {
 			return toppingsTotal;
 		}
 
-		public static void ProcessOrder(Order order) {
+		public static void ProcessOrder(DTO.Order order) {
 			if (order.Size == "choose") {
 				throw new InvalidSubmission();
 			}
@@ -69,24 +69,24 @@ namespace CS_Final.Domain {
 				string error = "You must enter a valid zip code.";
 				throw new FormatException(error);
 			}
-			if (!int.TryParse(order.Phone, out parsedPhone)) {
+			if (!long.TryParse(order.Phone, out parsedPhone)) {
 				string error = "You must enter a valid phone number with digits only.";
 				throw new FormatException(error);
 			}
 
-			Persistence.Order validatedOrder = new Persistence.Order();
+			DTO.Order validatedOrder = new DTO.Order();
 
-			validatedOrder.Id = order.Id;
+			validatedOrder.Id = Guid.NewGuid();
 			validatedOrder.Size = order.Size;
 			validatedOrder.Crust = order.Crust;
 			validatedOrder.Toppings = order.Toppings;
 			validatedOrder.Name = order.Name;
 			validatedOrder.Address = order.Address;
 			validatedOrder.Zip = parsedZip.ToString();
-			validatedOrder.Phone = String.Format("{0:(###)###-####}", parsedPhone);
+			validatedOrder.Phone = String.Format("{0:(###)###-####}", order.Phone);
 			validatedOrder.Payment = order.Payment;
 			
-			Persistence.Order.StoreOrder(validatedOrder);
+			Persistence.OrdersRepository.StoreOrder(validatedOrder);
 		}
     }
 }

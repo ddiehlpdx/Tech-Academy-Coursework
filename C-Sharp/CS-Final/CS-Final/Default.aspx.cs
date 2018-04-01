@@ -99,19 +99,23 @@ namespace CS_Final {
 		}
 
 		protected void submitButton_Click(object sender, EventArgs e) {
-			Domain.Order order = new Domain.Order();
+			var order = new DTO.Order();
 
 			try {
-				order.Id = new Guid();
+				order.Id = Guid.NewGuid();
 				order.Size = size.SelectedValue;
 				order.Crust = crust.SelectedValue;
 				order.Toppings = toppings;
-				order.Name = name.Text.Trim();
+				order.Name = name.Text;
 				order.Address = address.Text;
 				order.Zip = zip.Text;
 				order.Phone = phone.Text.Trim();
-				//order.Payment = Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).ID;
+				if(cashRadio.Checked)
+					order.Payment = "Cash";
+				else if(cardRadio.Checked)
+					order.Payment = "Card";
 				double total = Convert.ToDouble(sizeTotal + crustTotal + toppingsTotal);
+
 				Domain.Order.ProcessOrder(order);
 			}
 			catch (Domain.Exceptions.InvalidSubmission) {

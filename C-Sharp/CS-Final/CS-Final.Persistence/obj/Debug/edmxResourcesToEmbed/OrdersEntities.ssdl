@@ -9,8 +9,8 @@
     <Property Name="Crust" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="Toppings" Type="varchar(max)" Nullable="false" />
     <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="Address" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="Zip" Type="int" Nullable="false" />
+    <Property Name="Address" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Zip" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="Phone" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="Payment" Type="varchar" MaxLength="50" Nullable="false" />
   </EntityType>
