@@ -1,5 +1,0 @@
-C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\MyThirteenthChallenge\MyThirteenthChallenge.Domain\bin\Debug\MyThirteenthChallenge.Domain.dll
-C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\MyThirteenthChallenge\MyThirteenthChallenge.Domain\bin\Debug\MyThirteenthChallenge.Domain.pdb
-C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\MyThirteenthChallenge\MyThirteenthChallenge.Domain\obj\Debug\MyThirteenthChallenge.Domain.csprojResolveAssemblyReference.cache
-C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\MyThirteenthChallenge\MyThirteenthChallenge.Domain\obj\Debug\MyThirteenthChallenge.Domain.dll
-C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\MyThirteenthChallenge\MyThirteenthChallenge.Domain\obj\Debug\MyThirteenthChallenge.Domain.pdb

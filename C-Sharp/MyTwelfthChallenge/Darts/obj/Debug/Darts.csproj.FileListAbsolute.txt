@@ -1,5 +1,0 @@
-C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\MyTwelfthChallenge\Darts\bin\Debug\Darts.dll
-C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\MyTwelfthChallenge\Darts\bin\Debug\Darts.pdb
-C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\MyTwelfthChallenge\Darts\obj\Debug\Darts.csprojResolveAssemblyReference.cache
-C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\MyTwelfthChallenge\Darts\obj\Debug\Darts.dll
-C:\Users\ddieh\Documents\GitHub\Tech-Academy-Coursework\MyTwelfthChallenge\Darts\obj\Debug\Darts.pdb
