@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "SPA";
+}
+
+<h2>(Kind of) a Mad Lib! (Remember those?)</h2>
+
+<p>Name: <input data-bind="value: name" /></p>
+<p>Verb: <input data-bind="value: verb" /></p>
+<p>Noun: <input data-bind="value: noun" /></p>
+<p>Adjective: <input data-bind="value: adjective" /></p>
+
+<br /><br />
+<input type="button" data-bind="click: showLib" value="Show Your Mad Lib!"/>
+<br /><br />
+<h3><span data-bind="visible: clicked">You will not believe what <u><span data-bind='text: name'></span></u> did. He totally <u><span data-bind='text: verb'></span></u>ed a <u><span data-bind='text: noun'></span></u>, like... Right in front of me. He's completely <u><span data-bind='text: adjective'></span></u>.</span></h3>
+
+<br /><br />
+
+
+
+
